@@ -1,6 +1,6 @@
 {
   "name": "wechat-work-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "企业微信群机器人",
   "main": "lib/index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "minor": "tsc && auto-vers -i minor -c",
     "major": "tsc && auto-vers -i major -c"
   },
+  "type": "commonjs",
   "files": [
     "lib/**/*"
   ],
