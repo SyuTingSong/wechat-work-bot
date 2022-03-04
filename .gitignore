@@ -47,6 +47,10 @@ typings/
 # TypeScript cache
 *.tsbuildinfo
 
+# TypeScript output directory
+
+lib/
+
 # Optional npm cache directory
 .npm
 
@@ -102,3 +106,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Jetbrains IDEA
+/.idea

@@ -1,0 +1,49 @@
+{
+  "name": "wechat-work-bot",
+  "version": "1.0.0",
+  "description": "企业微信群机器人",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "patch": "tsc && auto-vers -i",
+    "minor": "tsc && auto-vers -i minor -c",
+    "major": "tsc && auto-vers -i major -c"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyuTingSong/wechat-work-bot.git"
+  },
+  "keywords": [
+    "企业微信",
+    "群机器人",
+    "wechat work",
+    "wework",
+    "wecom",
+    "robot",
+    "bot"
+  ],
+  "author": "TingSong Syu",
+  "license": "LGPL-2.1-or-later",
+  "bugs": {
+    "url": "https://github.com/SyuTingSong/wechat-work-bot/issues"
+  },
+  "homepage": "https://github.com/SyuTingSong/wechat-work-bot#readme",
+  "devDependencies": {
+    "@types/bent": "^7.3.2",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.0",
+    "auto-vers": "^1.0.3",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "bent": "^7.3.12",
+    "form-data": "^4.0.0"
+  }
+}
