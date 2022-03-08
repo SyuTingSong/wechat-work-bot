@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "lib",
+    "outDir": "lib/cjs",
     "rootDir": "src",
     "lib": ["ES2017"],
     "target": "ES2017",
@@ -12,5 +12,5 @@
     "esModuleInterop": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "test"]
+  "exclude": ["node_modules", "test", "lib"]
 }

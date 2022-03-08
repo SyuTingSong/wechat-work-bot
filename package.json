@@ -1,16 +1,22 @@
 {
   "name": "wechat-work-bot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "企业微信群机器人",
-  "main": "lib/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/esm/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "rm -rf lib && tsc && tsc -p tsconfig-esm.json && ./fixup",
     "patch": "tsc && auto-vers -i",
     "minor": "tsc && auto-vers -i minor -c",
     "major": "tsc && auto-vers -i major -c"
   },
-  "type": "commonjs",
   "files": [
     "lib/**/*"
   ],
